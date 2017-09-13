@@ -55,10 +55,39 @@ console.log(dane);
 var elWynik = document.getElementById('wynik');
 var elR = document.getElementById('r');
 var elH = document.getElementById('h');
+var Dane = [];
 
 
 function przelicz(){
 //console.log(elR.value);
 //console.log(elH.value);
+    var obwod = 2 * Math.PI * elR.value;
+    var pole = Math.PI * Math.pow(elR.value,2);
+    var objetosc = (1/3)*(Math.PI* Math.pow(elR.value,2) * elH.value);
     
+    console.log(obwod);
+    console.log(pole);
+    console.log(objetosc); //Oblicza
+    
+    Dane[0] = obwod;
+    Dane[1] = pole;
+    Dane[2] = objetosc;
+    
+    console.log(Dane); //Działa
 };
+
+/*Przycisk, przestaje działać w momencie odkomentowania kodu poniżej. Wyskakują błędy: 
+Uncaught SyntaxError: Unexpected token {
+funkcje.html:18 Uncaught ReferenceError: przelicz is not defined
+    at HTMLButtonElement.onclick (funkcje.html:18)
+*/
+/*
+if (document.getElementById('wybor1').checked) {
+        elWynik.innerHTML = Dane[0];
+    }
+else if (document.getElementById('wybor2').checked) {
+        elWynik.innerHTML = Dane[1];
+    }
+else (document.getElementById('wybor3').checked) {
+        elWynik.innerHTML = Dane[2];
+    }*/

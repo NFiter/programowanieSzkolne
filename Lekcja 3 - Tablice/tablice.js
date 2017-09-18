@@ -1,8 +1,8 @@
-                                /*     Tablice     */
+                             /*     Tablice     */
 
 //Tablice służą do przechowywania wartości. Są nieograniczone, ale najlepiej pracują gdy wartości w tablicy jest maksymalnie kilkaset. Do tablicy możemy dać wartości liczbowe lub strig (w apostrofach wtedy).
 
-/*------------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------*/
 
 //Tworzenie tablicy za pomocą literału tablicy
 
@@ -11,7 +11,7 @@ var elWynik = document.getElementById('wynik');
 
 elWynik.innerHTML = kolory[0]; //biały */
 
-/*------------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------*/
 
 //Tworzenie tablicy za pomocą konstruktora Array
 
@@ -25,7 +25,7 @@ console.log(auto); //Działa prompt
 samochody[0] = auto;
 console.log(samochody);*/  //Działa zamiana pierwszego elementu
 
-/*------------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------*/
 
 //Zadanie 1
 //Utwórz tablicę o nazwie "szkoła", przypisz do niej nazwisko, imię i wiek o które spytasz ucznia w prompcie. Wyświetl tablicę w bloku o nazwie "dane".
@@ -40,7 +40,7 @@ console.log(szkola);  //Działa
 var elDane = document.getElementById('dane');
 elDane.innerHTML = szkola;*/ //Działa
     
-/*------------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------*/
 
 //Tworzenie tablic wielowymiarowych z konstruktora Array
 
@@ -54,7 +54,7 @@ console.log(tab); //Cała tablica
 console.log(tab[1][2]);  //Gniezno
 */
 
-/*------------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------*/
 
 //Sortowanie
 
@@ -87,7 +87,7 @@ console.log(odwrot); //["Joanna", "Zenon", "Rafał", "Paweł", "Jacek", "Magda"]
 /*console.log(odwrot.indexOf('Anna')); //-1 (nie istnieje)
 console.log(odwrot.indexOf('Rafał')); //2 (istnieje)*/
 
-/*------------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------*/
 
 //Sortowanie liczb
 
@@ -101,7 +101,7 @@ cyfry.sort(function(a,b){
 });*/
 //Do sortowania liczb potrzebna jest funkcja
 
-/*------------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------*/
 
 //Funkcje
 
